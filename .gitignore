@@ -2,3 +2,5 @@
 **/*tmp*
 **/target/
 **/input.txt
+**/*.out
+**/*.old
