@@ -39,18 +39,7 @@ fn main() {
             let rucksack = rucksack.as_bytes();
             let mut left_hash_set = [false; 52]; //Vec::with_capacity(52);
             let mut right_hash_set = [false; 52];
-            /*
-            if mod_3_cnt == 2 {
-                for i in 0..badge_hash_set.len() {
-                    if badge_hash_set[i] == 3 {
-                        badge_score += i + 1;
-                        break;
-                    }
-                }
-                badge_hash_set = [0; 52];
-            }
-            mod_3_cnt = (mod_3_cnt + 1) % 3;
-            */
+
             let mut j = 0;
             let half = rucksack.len() / 2;
             for i in 0..half {

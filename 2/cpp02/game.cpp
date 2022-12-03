@@ -26,6 +26,7 @@ Choice fromChar(char c) {
     return Choice::Scisors;
 
   // should never happen, make this memory safe
+  std::cout << "ERR" << std::endl;
   return Choice::Paper;
 }
 
@@ -43,7 +44,6 @@ Choice play(Choice adversary, char result) {
     break;
   case 'Y':
     return adversary;
-    break;
   case 'Z':
     switch (adversary) {
     case Choice::Rock:
@@ -73,7 +73,6 @@ int playAgainst(Choice player, Choice adversary) {
 
   return (int)player + result;
 }
-
 
 bool operator<(Choice lhs, Choice rhs) {
   return lhs == Choice::Rock && rhs == Choice::Paper ||
