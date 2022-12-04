@@ -49,9 +49,6 @@ fn main() {
             // PART 1
             if (l_start >= r_start && l_end <= r_end) || (r_start >= l_start && r_end <= l_end) {
                 fully_contained += 1;
-                // PART 2
-                intercept += 1;
-                continue;
             }
 
             // PART 2
